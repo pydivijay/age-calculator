@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Container, TextField, Typography, Card, CardContent, Box, ThemeProvider, createTheme } from "@mui/material";
 
