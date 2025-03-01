@@ -12,7 +12,7 @@ import {
   createTheme,
 } from "@mui/material";
 import Image from "next/image";
-
+import Head from "next/head";
 
 const theme = createTheme({
   palette: {
@@ -57,6 +57,16 @@ export default function AgeCalculator() {
   };
 
   return (
+    <>
+     <Head>
+        <title>Age Calculator - Calculate Your Exact Age</title>
+        <meta name="description" content="Use our Age Calculator to find out your exact age in years, months, and days. Simple and easy to use!" />
+        <meta name="keywords" content="Age Calculator, Birthday Calculator, Calculate Age, Find Age" />
+        <meta name="author" content="Your Name" />
+        <meta property="og:title" content="Age Calculator - Calculate Your Exact Age" />
+        <meta property="og:description" content="Use our Age Calculator to find out your exact age in years, months, and days. Simple and easy to use!" />
+        <meta property="og:type" content="website" />
+      </Head>
     <ThemeProvider theme={theme}>
       <Container
         maxWidth="sm"
@@ -133,5 +143,6 @@ export default function AgeCalculator() {
         </Card>
       </Container>
     </ThemeProvider>
+    </>
   );
 }
