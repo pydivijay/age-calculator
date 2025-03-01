@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://age-calculator-vijay.vercel.app/sitemap.xml
