@@ -87,7 +87,6 @@ export default function AgeCalculator() {
                 <input
                   type="date"
                   value={startDate}
-                  max={endDate || undefined} // Prevents selecting a date after endDate
                   onChange={(e) => {
                     const newStartDate = e.target.value;
                     setStartDate(newStartDate);
@@ -103,7 +102,6 @@ export default function AgeCalculator() {
                 <input
                   type="date"
                   value={endDate}
-                  min={startDate || undefined} // Prevents selecting a date before startDate
                   onChange={(e) => {
                     const newEndDate = e.target.value;
                     setEndDate(newEndDate);
